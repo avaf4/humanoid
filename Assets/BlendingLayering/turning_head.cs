@@ -16,11 +16,11 @@ public class turning_head : MonoBehaviour
         // 3) if the user hits the right or left arrows...
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            blendState += 0.001f;
+            blendState += 1f * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            blendState -= 0.001f;
+            blendState -= 1f * Time.deltaTime;
         }
 
         // clamp number value inbetween 0 and 1

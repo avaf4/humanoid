@@ -16,11 +16,11 @@ public class blend_her : MonoBehaviour
         // 3) if the user hits the up and down arrows...
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            blendState += 0.001f;
+            blendState += 1f * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            blendState -= 0.001f;
+            blendState -= 1f * Time.deltaTime;
         }
 
         // clamp number value inbetween 0 and 1
